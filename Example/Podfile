@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'FDFile3Downloader_Example' do
+  pod 'FDFile3Downloader', :path => '../'
+
+  target 'FDFile3Downloader_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
