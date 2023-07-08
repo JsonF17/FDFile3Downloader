@@ -1,0 +1,6 @@
+framework module Pods_FDFile3Downloader_Tests {
+  umbrella header "Pods-FDFile3Downloader_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

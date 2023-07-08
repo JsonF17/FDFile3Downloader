@@ -40,8 +40,8 @@
 		0EF17266499C2B4E4252295D /* Pods-FDFile3Downloader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDFile3Downloader_Example.release.xcconfig"; path = "Target Support Files/Pods-FDFile3Downloader_Example/Pods-FDFile3Downloader_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2243898D70C5C6F98811CDCA /* Pods-FDFile3Downloader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDFile3Downloader_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FDFile3Downloader_Tests/Pods-FDFile3Downloader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		22A0C748918CC6469496DDED /* Pods_FDFile3Downloader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FDFile3Downloader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E34A366E84C08A8DA79D5B3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		439890176931318BCD5FF90E /* FDFile3Downloader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FDFile3Downloader.podspec; path = ../FDFile3Downloader.podspec; sourceTree = "<group>"; };
+		2E34A366E84C08A8DA79D5B3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		439890176931318BCD5FF90E /* FDFile3Downloader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FDFile3Downloader.podspec; path = ../FDFile3Downloader.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4F160E66F79A22333072D313 /* Pods-FDFile3Downloader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDFile3Downloader_Tests.release.xcconfig"; path = "Target Support Files/Pods-FDFile3Downloader_Tests/Pods-FDFile3Downloader_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FDFile3Downloader_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FDFile3Downloader_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9286AFAE7F5530115F04F7BB /* Pods_FDFile3Downloader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FDFile3Downloader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5A167FC5AEF550294A2FC4 /* Pods-FDFile3Downloader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDFile3Downloader_Example.debug.xcconfig"; path = "Target Support Files/Pods-FDFile3Downloader_Example/Pods-FDFile3Downloader_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D4BA3B45834C4DC06130B805 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D4BA3B45834C4DC06130B805 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				2243898D70C5C6F98811CDCA /* Pods-FDFile3Downloader_Tests.debug.xcconfig */,
 				4F160E66F79A22333072D313 /* Pods-FDFile3Downloader_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -325,11 +325,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FDFile3Downloader_Example/Pods-FDFile3Downloader_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/FDFile3Downloader/FDFile3Downloader.framework",
+				"${BUILT_PRODUCTS_DIR}/SJDownloadDataTask/SJDownloadDataTask.framework",
+				"${BUILT_PRODUCTS_DIR}/SJMediaCacheServer/SJMediaCacheServer.framework",
+				"${BUILT_PRODUCTS_DIR}/SJUIKit/SJUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFile3Downloader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJDownloadDataTask.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJMediaCacheServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -1,0 +1,6 @@
+framework module FDFile3Downloader {
+  umbrella header "FDFile3Downloader-umbrella.h"
+
+  export *
+  module * { export * }
+}

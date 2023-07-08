@@ -1,0 +1,63 @@
+PODS:
+  - CocoaAsyncSocket (7.6.5)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - FDFile3Downloader (0.1.0):
+    - SJDownloadDataTask
+    - SJMediaCacheServer/KTVCocoaHTTPServer
+    - SJUIKit/SQLite3
+  - SJDownloadDataTask (1.2.4):
+    - SJDownloadDataTask/Core (= 1.2.4)
+    - SJUIKit/ObserverHelper
+  - SJDownloadDataTask/Core (1.2.4):
+    - SJDownloadDataTask/Core/ResourceLoader (= 1.2.4)
+    - SJUIKit/ObserverHelper
+  - SJDownloadDataTask/Core/ResourceLoader (1.2.4):
+    - SJUIKit/ObserverHelper
+  - SJMediaCacheServer/KTVCocoaHTTPServer (1.7.8):
+    - CocoaAsyncSocket
+    - SJUIKit/SQLite3
+  - SJUIKit/ObserverHelper (0.0.0.59)
+  - SJUIKit/SQLite3 (0.0.0.59):
+    - SJUIKit/SQLite3/Core (= 0.0.0.59)
+    - SJUIKit/SQLite3/Protocol (= 0.0.0.59)
+    - YYModel
+  - SJUIKit/SQLite3/Core (0.0.0.59):
+    - SJUIKit/SQLite3/Protocol
+    - YYModel
+  - SJUIKit/SQLite3/Protocol (0.0.0.59):
+    - YYModel
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - FDFile3Downloader (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CocoaAsyncSocket
+    - FBSnapshotTestCase
+    - SJDownloadDataTask
+    - SJMediaCacheServer
+    - SJUIKit
+    - YYModel
+
+EXTERNAL SOURCES:
+  FDFile3Downloader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  FDFile3Downloader: 9297dffcf33c91e2b180c7b412c9eacb9bea3ea8
+  SJDownloadDataTask: 3755925702cad1145c7d89180c50eeb8e78f38de
+  SJMediaCacheServer: 95bebce42f281fccaff25a5e8284022478ff7ba5
+  SJUIKit: a40111941e408cc17d4c1c23495aa92999e814b0
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 3983c77b496646a775b52ed057c6bcaac1f0fd9e
+
+COCOAPODS: 1.12.1
